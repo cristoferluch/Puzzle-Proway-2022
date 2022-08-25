@@ -1,2 +1,24 @@
 # Puzzle-Proway-2022
-Show de Talentos
+
+
+# Moda Infantil
+
+Meu Projeto é um site de venda de roupas Infantils.
+
+
+
+
+## Autores
+
+- [@cristoferluch](https://www.github.com/cristoferluch)
+
+
+## 🛠 Ferramentas Usadas
+Javascript, HTML e CSS
+
+### Framework: 
+Bootstrap
+
+### Banco de Dados:  
+Firebase
+
