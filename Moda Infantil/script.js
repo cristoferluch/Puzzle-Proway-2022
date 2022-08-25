@@ -38,12 +38,12 @@ carrinho = JSON.parse(localStorage.getItem("carrinho") || "[]")
 //Executa uma funcao de acordo com a pagina aberta no navegador
 let url = window.location.pathname
 
-if (url.includes("index.html")) {
-  index()
-} else if (url.includes("checkout.html")) {
+if (url.includes("checkout.html")) {
   checkout()
 } else if (url.includes("produto.html")) {
   produto()
+}else{
+  index()
 }
 
 //Funcao para executar na pagina index.html
