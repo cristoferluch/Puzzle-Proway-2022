@@ -3,7 +3,7 @@
 
 # Moda Infantil
 
-Meu Projeto é um site de venda de roupas Infantils.
+Meu Projeto é um site de venda de roupas Infantil.
 
 https://moda-infantil.netlify.app/index.html
 
