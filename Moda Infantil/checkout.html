@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px 0px 20px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #Fff;
+        }
+
+        header i {
+            font-size: 30pt;
+            cursor: pointer;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 25pt;
+            margin-top: 30px;
+            font-weight: 900;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .checkout {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-top: 20px;
+            overflow-y: scroll;
+            height: 400px;
+            width: 800px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.300);
+            border-radius: 10px;
+        }
+
+        .checkout::-webkit-scrollbar {
+            width: 14px;
+            
+        }
+
+        .checkout::-webkit-scrollbar-track {
+            background: whitesmoke;
+            border-radius: 10px;
+        }
+
+        .checkout::-webkit-scrollbar-thumb {
+            background-color: #f3a78b;
+            border-radius: 20px;
+            border: 2px solid rgba(0, 0, 0, 0.300);
+        }
+
+        .pedido .detalhes {
+            width: 40%;
+            padding: 10px;
+        }
+
+        .pedido .detalhes p {
+            color: black;
+            margin-left: 5px;
+
+        }
+
+        .pedido .preco {
+            width: 10%;
+            padding: 5px;
+        }
+
+        .pedido .preco p {
+            color: black;
+        }
+
+        .pedido .img {
+            width: 20%;
+            max-height: 80px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pedido .img img {
+
+            border-radius: 20px;
+            max-height: 80px;
+            object-fit: contain;
+            margin: 5px;
+        }
+
+        .pedido .quantidade {
+            width: 10%;
+            padding: 10px;
+        }
+
+        .pedido .quantidade input {
+            padding: 5px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .pedido .total {
+            width: 10%;
+        }
+
+        .pedido .total p {
+            color: black;
+        }
+
+        .pedido .remover-item {
+            width: 10%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .pedido .remover-item i {
+            color: black;
+            font-size: 18pt;
+            cursor: pointer;
+        }
+
+        .pedido {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            margin: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.300);
+            width: 80%;
+            padding: 5px;
+            max-width: 800px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.300);
+            max-height: 80px;
+        }
+
+        .finalizar-compra {
+            position: absolute;
+            text-align: center;
+            bottom: 185px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        #btn-finalizar-pedido {
+            border: none;
+            background: #038C25;
+            color: #fff;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: .3s ease;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.644);
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 10px;
+            font-size: 12pt;
+        }
+
+        #btn-finalizar-pedido:hover {
+            background: #02701d;
+        }
+
+        .finalizar-compra .fechar-pedido button {
+            border: none;
+            background: #03658c;
+            color: #fff;
+            padding: 25px;
+            font-size: 12pt;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: .3s ease;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.644);
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 10px;
+        }
+
+        .finalizar-compra .fechar-pedido button:hover {
+            background: #025779;
+        }
+
+        .finalizar-compra .fechar-pedido button a {
+            text-decoration: none;
+            color: #FFf;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            background: black;
+            color: whitesmoke;
+        }
+
+        @media only screen and (max-width: 800px){
+            .checkout {
+                width: 90%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+            }
+            
+            .pedido {
+                width: 100%;
+                
+            }
+
+            .pedido p{
+                font-size: 10pt;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html"><i class="bi bi-arrow-left"></i></a>
+
+        <h1><a href="./index.html">MODA INFANTIL</a></h1>
+        <i class="bi bi-person" onclick="alert('Em breve!')"></i>
+    </header>
+
+    <h2>CARRINHO DE COMPRAS</h2>
+
+    <div class="checkout">
+    </div>
+
+
+    <div class="finalizar-compra">
+        <div>
+            <h3 class="valorFinal">TOTAL: R$ </h3>
+        </div>
+        <div class="fechar-pedido">
+            <button><a href="./index.html">ESCOLHER MAIS PRODUTOS</a></button>
+            <button id="btn-finalizar-pedido" onclick="alert('Em breve!')">FECHAR PEDIDO</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Info -->
+        <div class="info">
+            <div class="footer help">
+                <h4>INFORMAÇÕES</h4>
+                <p><a href="">Formas de Pagamento</a></p>
+                <p><a href="">Entregas</a></p>
+                <p><a href="">Trocas e Devoluções</a></p>
+                <p><a href="">Termos e Privacidade</a></p>
+            </div>
+            <div class="footer about">
+                <h4>INSTITUCIONAL</h4>
+                <p><a href="">Sobre nos</a></p>
+                <p><a href="">Contate-nos</a></p>
+            </div>
+            <div class="footer contact">
+                <h4>FALE COM A GENTE</h4>
+                <p>Contato: <a href="https://wa.me/5547996715450" target="_blank">(47) 996715450</a></p>
+                <p>E-mail: <a href="">cristof3r.dk@gmail.com</a></p>
+            </div>
+            <div class="footer follow">
+                <h4>REDES SOCIAIS</h4>
+                <a href="https://www.facebook.com/cristofer.luchtenberg" target="_blank"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/cristoferluch/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/5547996715450" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+        <!-- FIM Info -->
+        <!-- Copyright -->
+        <div class="copyright">
+            &copy; Cristofer Luchtenberg
+        </div>
+        <!-- FIM Copyright -->
+    </footer>
+    <!-- FIM Footer -->
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
