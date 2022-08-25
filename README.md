@@ -5,7 +5,7 @@
 
 Meu Projeto é um site de venda de roupas Infantil.
 
-https://moda-infantil.netlify.app/index.html
+https:
 
 
 ## Autores
