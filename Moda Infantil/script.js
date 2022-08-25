@@ -227,7 +227,7 @@ function produto() {
               <p>CALCULE O FRETE E O PRAZO:</p>
               <form name="formulario" action="" method="get">
                 <input name="cep" id="cep" type="text" placeholder="_____-___">
-                <i class="bi bi-search"></i>
+                <i class="bi bi-search" onclick="alert('Em Breve!')"></i>
               </form>
               </div>
               </div>
